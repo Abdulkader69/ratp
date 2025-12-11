@@ -10,28 +10,62 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
+.Archivo {
+  font-family: 'Archivo Black', sans-serif;
+}
+.btn {
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #ffcb14;
+  background-color: #ffcb14;
+  color: #000;
+  padding: 0 30px;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: 'Archivo Black', sans-serif;
+  border-radius: 37px;
+  transition: all 0.3s ease-in;
+}
+.btn:hover {
+  background-color: transparent;
+}
 .container {
   width: 100%;
   max-width: 1280px;
   margin: auto;
   padding: 0 20px;
 }
+p {
+  margin-bottom: 20px;
+}
+
+p:last-child {
+  margin: 0;
+}
+section {
+  position: relative;
+  overflow: hidden;
+}
+/*=============== Header CSS =============== */
 header.main-header {
   background-color: #232121;
   position: sticky;
   top: 0;
   left: 0;
   padding: 20px 0;
+  z-index: 9999;
 }
 header.main-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header.main-header .logo {
+.logo {
   display: flex;
   align-items: center;
   font-size: 22px;
+  line-height: 1;
   text-decoration: none;
   color: #fff;
   gap: 10px;
@@ -52,3 +86,74 @@ header.main-header .menu-wrap a {
 header.main-header .menu-wrap a:hover {
   color: #ffcb14;
 }
+header.main-header .menu-wrap .btn {
+  color: #000;
+}
+/*=============== Header CSS =============== */
+/*=============== Footer CSS =============== */
+footer.main-footer {
+  background-color: #232121;
+  overflow: hidden;
+  position: relative;
+  padding: 70px 0;
+  color: #fff;
+}
+footer.main-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+footer.main-footer .left {
+  display: flex;
+  align-items: center;
+  gap: 20px 40px;
+  flex: 1;
+}
+footer.main-footer .right {
+  width: 42%;
+  display: grid;
+  gap: 20px 30px;
+  grid-template-columns: 1fr 1fr;
+}
+footer.main-footer .right h5 {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+footer.main-footer .right p {
+  margin-bottom: 10px;
+}
+/*=============== Footer CSS =============== */
+/*=============== Home Hero CSS =============== */
+section.home-hero {
+  padding: 70px 0;
+  text-align: center;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+section.home-hero .logo {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+section.home-hero .headline {
+  font-size: 64px;
+  font-family: 'Archivo Black', sans-serif;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1;
+}
+section.home-hero .contents {
+  width: 100%;
+  max-width: 1135px;
+  margin: 0 auto 30px;
+  font-size: 32px;
+  font-weight: 600;
+}
+section.home-hero .btn {
+  height: 73px;
+  font-size: 32px;
+}
+/*=============== Home Hero CSS =============== */
