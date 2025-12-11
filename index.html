@@ -101,6 +101,133 @@
     </section>
     <!-- ================== Home Hero Area ================== -->
 
+    <!-- ================== Time Area ================== -->
+    <section class="timer">
+      <div class="container">
+        <div class="left">
+          Race day:
+          <div class="date">12/09/2026</div>
+        </div>
+        <div class="right">
+          <p>
+            Time until <br />
+            the race:
+          </p>
+          <div class="countdown" data-timer="12/09/2026 5:30:00 AM">
+            <div class="item">
+              <span id="days"></span><br />
+              <span class="text">Days</span>
+            </div>
+            <div class="item">
+              <span id="hours"></span><br />
+              <span class="text">Hours</span>
+            </div>
+            <div class="item">
+              <span id="minutes"></span><br />
+              <span class="text">Minutes</span>
+            </div>
+            <div class="item">
+              <span id="seconds"></span><br />
+              <span class="text">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================== Time Area ================== -->
+
+    <!-- ================== Map Area ================== -->
+    <section class="map-area">
+      <div class="race-status">
+        <p>Race stats:</p>
+        <p class="m"><span>24.6</span>miles</p>
+        <p class="m"><span>5,200</span>metres ascent</p>
+      </div>
+      <div class="race-start">
+        <p>Starting point:</p>
+        <h4>
+          Cafe at <br />
+          Horton in <br />
+          Ribblesdale
+        </h4>
+      </div>
+      <iframe
+        width="100%"
+        height="900"
+        frameborder="0"
+        src="https://api.mapbox.com/styles/v1/festoonstudios/cmhaj5cyk002n01sj7vmqdplg.html?title=false&access_token=pk.eyJ1IjoiZmVzdG9vbnN0dWRpb3MiLCJhIjoiY2pnaGpiaW4wMGFycjJ3bXB5enF0Z2w2YSJ9.D8JS4tLYxB5nqowy-9c98w&zoomwheel=false#10.8/54.1876/-2.3309"
+        allowfullscreen
+      >
+      </iframe>
+      <div class="left-overlap">
+        <h3>The route</h3>
+        <p>Departure from: [name] café at Horton in Ribblesdale.</p>
+        <p>Staggered departures between 6.00 – 7.30am.</p>
+        <p>Competitors will be advised of their start times.</p>
+        <p>
+          All team members must wear the official SES Race Across The Peaks Race
+          Bib (for identification purposes).
+        </p>
+        <p>
+          Winners will be presented their awards at the Oscars of Exploration
+          which is held annually the Royal College of Surgeons.
+        </p>
+      </div>
+    </section>
+    <!-- ================== Map Area ================== -->
+
+    <!-- ================== Award Area ================== -->
+    <section class="award">
+      <div class="container">
+        <h2 class="headline">Award categories</h2>
+        <div class="award-grid">
+          <div class="item">
+            <div class="logo">
+              <img src="/assets/team-4.svg" alt="team-4" />
+            </div>
+            <div class="title">Team of 4</div>
+            <div class="wrap">
+              <img src="/assets/clock.svg" alt="" />
+              Fastest Team of 4
+            </div>
+            <div class="wrap">
+              <img src="/assets/euro.svg" alt="" />
+              Team that raised the most
+            </div>
+          </div>
+          <div class="item">
+            <div class="logo">
+              <img src="/assets/solo-female.svg" alt="solo-female" />
+            </div>
+            <div class="title">Solo female</div>
+            <div class="wrap">
+              <img src="/assets/clock.svg" alt="" />
+              Fastest solo female
+            </div>
+            <div class="wrap">
+              <img src="/assets/euro.svg" alt="" />
+              Fastest solo female that raised the most
+            </div>
+          </div>
+          <div class="item">
+            <div class="logo">
+              <img src="/assets/solo-male.svg" alt="solo-male" />
+            </div>
+            <div class="title">Solo male</div>
+            <div class="wrap">
+              <img src="/assets/clock.svg" alt="" />
+              Fastest solo male
+            </div>
+            <div class="wrap">
+              <img src="/assets/euro.svg" alt="" />
+              Fastest solo male that raised the most
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================== Award Area ================== -->
+
     <!-- ================== Footer Area ================== -->
     <footer class="main-footer">
       <div class="container">
@@ -179,6 +306,9 @@
       </div>
     </footer>
     <!-- ================== Footer Area ================== -->
+    wp_enqueue_script( 'smoothscroll',
+    '//cdn.jsdelivr.net/npm/smoothscroll-for-websites@1.4.10/SmoothScroll.min.js',
+    array(), null, true );
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="

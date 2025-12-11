@@ -28,7 +28,8 @@ body {
   transition: all 0.3s ease-in;
 }
 .btn:hover {
-  background-color: transparent;
+  background-color: #232121;
+  color: #ffcb14;
 }
 .container {
   width: 100%;
@@ -157,3 +158,165 @@ section.home-hero .btn {
   font-size: 32px;
 }
 /*=============== Home Hero CSS =============== */
+/*=============== Timer CSS =============== */
+section.timer {
+  background-color: #e36226;
+  color: #fff;
+  padding: 50px 0;
+}
+section.timer .container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section.timer .left {
+  font-size: 40px;
+  line-height: 1.2;
+}
+section.timer .left .date {
+  font-size: 60px;
+  font-weight: 700;
+}
+section.timer .right {
+  display: flex;
+  gap: 20px 60px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+section.timer .right .countdown {
+  display: flex;
+  gap: 20px 60px;
+}
+section.timer .right .countdown .item:last-child {
+  display: none;
+}
+section.timer .right .countdown .item span:first-child {
+  font-weight: 700;
+  font-size: 60px;
+}
+section.timer .right p {
+  margin: 10px 0 0;
+  line-height: 1.2;
+}
+/*=============== Timer CSS =============== */
+/*=============== Map CSS =============== */
+section.map-area {
+  display: flex;
+}
+section.map-area .left-overlap {
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.62);
+  padding: 40px;
+  top: 30px;
+  left: 0;
+}
+section.map-area .left-overlap h3 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+.race-status {
+  position: absolute;
+  right: 40px;
+  width: 377px;
+  border: 1px dashed #222121;
+  top: 40px;
+  padding: 30px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.race-status p {
+  margin-bottom: 10px;
+}
+
+.race-status p.m {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.race-status p.m span {
+  font-size: 56px;
+}
+
+.race-status p:last-child {
+  margin: 0;
+}
+
+.race-start {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  box-shadow: 0 3px 6px #000;
+  background-color: #fff;
+  padding: 10px 20px;
+  width: 300px;
+}
+
+.race-start p {
+  margin-bottom: 10px;
+}
+
+.race-start h4 {
+  font-size: 32px;
+}
+/*=============== Map CSS =============== */
+
+/*=============== Award CSS =============== */
+section.award {
+  background-color: #fdfcf8;
+  padding: 100px 0;
+}
+section.award .headline {
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 56px;
+  margin-bottom: 50px;
+  color: #222121;
+}
+section.award .award-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+section.award .award-grid .logo {
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 220px;
+  align-items: flex-end;
+}
+section.award .award-grid .title {
+  font-size: 32px;
+  font-family: 'Archivo Black', sans-serif;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+section.award .award-grid .wrap {
+  width: 100%;
+  max-width: 317px;
+  border: 2px solid #e46226;
+  border-radius: 17px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  text-align: left;
+  gap: 14px;
+  min-height: 90px;
+  padding-left: 15px;
+}
+section.award .award-grid div:last-child {
+  margin-bottom: 0;
+}
+section.award .award-grid div:last-child img {
+  margin-top: -15px;
+}
+/*=============== Award CSS =============== */
