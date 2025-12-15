@@ -33,7 +33,7 @@ h4 {
   font-size: 32px;
 }
 h5 {
-  font-size: 28;
+  font-size: 28px;
 }
 h6 {
   font-size: 22px;
@@ -477,3 +477,83 @@ section.left-image-contents.why-involved {
   background-color: #faf9f5;
 }
 /*=============== Left Image Right Contents CSS =============== */
+
+/*=============== Kit List CSS =============== */
+ul {
+  list-style: none;
+}
+ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+ul li::before {
+  position: absolute;
+  content: '';
+  width: 19px;
+  height: 18px;
+  background-image: url(/assets/checkmark.svg);
+  left: 0;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 4px;
+}
+section.kit-list {
+  background-color: #fdfcf9;
+  padding: 70px 0 100px;
+}
+.kit-list-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.kit-list-grid .item {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.kit-list-grid .item h5 {
+  font-size: 26px;
+  margin: 20px 0;
+}
+ul li:last-child {
+  margin-bottom: 0;
+}
+/*=============== Kit List CSS =============== */
+/*=============== Inner Hero CSS =============== */
+section.inner-hero {
+  background-color: #fdfcf8;
+  padding: 70px 0 100px;
+}
+section.inner-hero .inner {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 50px 50px 70px;
+  width: 100%;
+  max-width: 885px;
+  margin: auto;
+}
+section.inner-hero .inner .line {
+  width: 65px;
+  height: 3px;
+  background-color: #232121;
+  margin: 0 auto 50px;
+}
+.faqs .faq {
+  border-bottom: 1px dashed #222121;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+.faqs .faq .question {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.faqs .faq:last-child {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/*=============== Inner Hero CSS =============== */
