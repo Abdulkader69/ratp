@@ -19,6 +19,7 @@ h5,
 h6 {
   font-family: 'Archivo Black', sans-serif;
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 h1 {
   font-size: 64px;
@@ -95,6 +96,7 @@ header.main-header .container {
   text-decoration: none;
   color: #fff;
   gap: 10px;
+  margin: 0;
 }
 header.main-header .menu-wrap {
   display: flex;
@@ -556,4 +558,91 @@ section.inner-hero .inner .line {
   margin: 0;
   padding: 0;
 }
+section.inner-hero .sub-headline {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+section.full-image {
+  display: flex;
+}
+section.full-image img {
+  width: 100%;
+}
+.font-48 {
+  font-size: 48px;
+}
+.tagline {
+  margin: 0 auto 30px;
+  width: max-content;
+  height: 50px;
+  border: 3px solid #232121;
+  text-transform: uppercase;
+  padding: 9px 20px;
+  line-height: 1;
+  border-radius: 25px;
+}
 /*=============== Inner Hero CSS =============== */
+section.default-lock {
+  padding: 70px 0;
+}
+hr {
+  margin: 40px 0;
+  opacity: 0.5;
+}
+body input[type='text'],
+body input[type='email'],
+body input[type='url'],
+body input[type='password'],
+body input[type='search'],
+body input[type='number'],
+body input[type='tel'],
+body input[type='range'],
+body input[type='date'],
+body input[type='month'],
+body input[type='week'],
+body input[type='time'],
+body input[type='datetime'],
+body input[type='datetime-local'],
+body input[type='color'],
+textarea {
+  color: #232121;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  height: 55px;
+  box-shadow: 0 3px 6px #d5d1c3;
+  margin-top: 10px;
+}
+textarea {
+  height: 200px;
+}
+input[type='radio'],
+input[type='checkbox'] {
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+}
+label:has(input[type='radio']),
+label:has(input[type='checkbox']) {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+form.register-form .wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 50px;
+  margin-bottom: 30px;
+}
+.radiobox {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+}
+form.register-form button[type='submit'] {
+  margin-top: 40px;
+}
