@@ -528,6 +528,9 @@ ul li:last-child {
 section.inner-hero {
   background-color: #fdfcf8;
   padding: 70px 0 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 section.inner-hero .inner {
   background-color: #fff;
@@ -645,4 +648,74 @@ form.register-form .wrap {
 }
 form.register-form button[type='submit'] {
   margin-top: 40px;
+}
+section.sub-navigation {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding-top: 15px;
+  position: sticky;
+  top: 92px;
+  z-index: 9;
+  background-color: #ffffff;
+}
+section.sub-navigation .container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+section.sub-navigation a {
+  color: #222121;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.3;
+  display: inline-block;
+  padding-bottom: 15px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in;
+}
+section.sub-navigation a:hover {
+  border-color: #222121;
+}
+section.places-to-stays {
+  background-color: #fdfcf8;
+  padding: 100px 0;
+}
+section.places-to-stays .top-area {
+  margin-bottom: 70px;
+}
+section.places-to-stays .top-area .headline {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+section.places-to-stays .top-area .descriptions {
+  width: 100%;
+  max-width: 920px;
+  margin: auto;
+  text-align: center;
+}
+.places-address-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.places-address-grid .item {
+  background-color: #fff;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 11px;
+  padding: 30px;
+  line-height: 1.7;
+}
+.places-address-grid .item h6 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.places-address-grid .item a {
+  color: #222121;
+}
+.divider {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+  background-color: #707070;
+  height: 1px;
 }
