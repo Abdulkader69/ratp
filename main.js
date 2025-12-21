@@ -1,5 +1,12 @@
 (function ($) {
   $(document).ready(function ($) {
+    $('.menu-trigger').click(function (e) {
+      e.preventDefault();
+      $(this).toggleClass('active');
+      $('.mobile-menu-wrap').slideToggle();
+      $('body').toggleClass('m-active');
+    }); // end click
+
     let timer = $('.countdown').attr('data-timer');
     function countdown(dateEnd) {
       var timer, days, hours, minutes, seconds;
@@ -67,7 +74,7 @@
       var hash = this.hash;
 
       if ($(hash).length) {
-        $('html, body').animate({ scrollTop: $(hash).offset().top - 100 }, 300);
+        $('html, body').animate({ scrollTop: $(hash).offset().top - 150 }, 300);
       }
     });
   }); //document ready
